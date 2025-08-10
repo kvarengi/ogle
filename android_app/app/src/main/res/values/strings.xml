@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OGLE Demiurge</string>
+    <string name="terminal_hint">Введите команду...</string>
+    <string name="welcome_message">Добро пожаловать в OGLE!</string>
+    <string name="gyroscope_unavailable">Гироскоп недоступен на этом устройстве</string>
+    <string name="permission_denied">Разрешение отклонено</string>
+    <string name="calibration_complete">Калибровка завершена</string>
+    <string name="measuring_started">Измерения начаты</string>
+    <string name="measuring_stopped">Измерения остановлены</string>
+</resources>

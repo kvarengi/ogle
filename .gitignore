@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# Logs
+logs/
+*.log
+
+# Node (in case)
+node_modules/
+
+# Android
+android_app/.gradle/
+android_app/.idea/
+android_app/**/*.iml
+android_app/app/build/
+android_app/build/
+android_app/local.properties
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Flask/coverage
+instance/
+.coverage
+htmlcov/
+
+# Editor
+.vscode/
+.idea/
+
+# Others
+*.keystore
+*.jks
