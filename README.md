@@ -61,6 +61,27 @@ pip install -r requirements.txt
 python3 cosmic_web_interface.py
 ```
 
+### 🧩 OGLE NODE — оффчейн-рынок и балансы
+- Функции: регистрация, балансы, начисление GCR (игровая гравитация), ордербук GCR↔OGLEC
+- Запуск:
+```bash
+pip install fastapi uvicorn pydantic
+python3 ogle_node.py
+```
+- Примеры запросов:
+```bash
+# регистрация
+curl -X POST localhost:8080/register -H 'Content-Type: application/json' -d '{"username":"ivan"}'
+# начислить GCR
+curl -X POST localhost:8080/mint_gcr -H 'Content-Type: application/json' -d '{"username":"ivan","amount":10}'
+# балансы
+curl localhost:8080/balances/ivan
+# заявка купить GCR за OGLEC по 2.5
+curl -X POST localhost:8080/order -H 'Content-Type: application/json' -d '{"username":"ivan","side":"buy","price":2.5,"amount":3}'
+# ордербук
+curl localhost:8080/orderbook
+```
+
 ## 🌌 Космические тела в каталоге
 
 1. **Бездонная Печаль Русской Души** - Чёрная дыра глубже Байкала
